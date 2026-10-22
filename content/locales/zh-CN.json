@@ -1,0 +1,53 @@
+{
+    "$comment": "界面文字（简体中文）。只改引号里的文字即可，不要改动键名。",
+    "nav": {
+        "home": "首页",
+        "podcasts": "播客",
+        "association": "SSN 社团",
+        "contact": "联系我们"
+    },
+    "home": {
+        "badge": "赛德文官方报纸 / 播客",
+        "heroTitle": "赛德文新闻社",
+        "heroDescription": "赛德文新闻社（Sedbergh School News，简称 SSN）是福州赛德文学校（Sedbergh School Fuzhou，SSF）的官方报纸/播客。它由 SSF G10 学生 Sally Wu 和 Nina Karina Hoffmann 于 2026 年 9 月创立，最初只是一个课外项目，但很快发展成了更庞大的事业。\n\n本网站每两到三周更新一期播客，内容涵盖校园新闻、新生/新师采访、学生会相关活动讨论、与升学顾问及高年级学长学姐的对谈、有声书（按角色/旁白朗读），以及每周写作话题。同时它也是一份\"报纸\"，提供更多关于 SSF 校园生活的深入内容（也包含大量文字作品）。",
+        "aboutTitle": "关于 SSN",
+        "quotesTitle": "来自创始人的话",
+        "listenTitle": "收听 SSN",
+        "listenHint": "我们的播客已在以下平台上线。"
+    },
+    "podcasts": {
+        "title": "播客",
+        "latestLabel": "最新一集",
+        "listenOn": "在 {{platform}} 收听",
+        "episodesLabel": "往期节目"
+    },
+    "association": {
+        "title": "SSN 社团",
+        "foundersTitle": "创始人",
+        "membersTitle": "成员",
+        "alumniTitle": " alumni 名单",
+        "roles": {
+            "founder": "创始人",
+            "leader": "现任负责人",
+            "host": "主持人",
+            "leadWriter": "主笔",
+            "writer": "撰稿人",
+            "producer": "制作人",
+            "leadTranslator": "主翻译"
+        },
+        "grades": {
+            "g9": "G9",
+            "g10": "G10"
+        }
+    },
+    "contact": {
+        "title": "联系我们",
+        "lead": "有节目的好点子吗？",
+        "emailLabel": "给我们发邮件：",
+        "teamsLabel": "Microsoft Teams",
+        "teamsHint": "如果你是 SSF 高中部学生、老师或管理人员，直接在 Teams 上给我们留言即可！"
+    },
+    "footer": {
+        "tagline": "赛德文官方报纸 / 播客"
+    }
+}

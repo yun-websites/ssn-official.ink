@@ -1,0 +1,13 @@
+{
+    "$comment": "首页上两位创始人的引言。每条包含 quote（引言内容）和 name（署名）。数量不限。",
+    "quotes": [
+        {
+            "name": "Sally",
+            "quote": "We believe this will provide younger students with more advice and help everyone tremendously."
+        },
+        {
+            "name": "Nina",
+            "quote": "We think this will unite people together to practice their English, speaking, writing, and editing skills."
+        }
+    ]
+}

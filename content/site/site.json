@@ -1,0 +1,24 @@
+{
+    "$comment": "网站基本信息。只改引号里的内容即可。",
+    "name": "Sedbergh School News",
+    "shortName": "SSN",
+    "tagline": "Official Newspaper/Podcast of Sedbergh School Fuzhou (SSF)",
+    "founded": "2026-09",
+    "description": "Sedbergh School News (or more commonly known as SSN) is the official newspaper/podcast of Sedbergh School Fuzhou. Founded in September 2026 by SSF G10 students Sally Wu and Nina Karina Hoffmann, it first started off as an extracurricular project but soon evolved into something much more.\n\nThis website provides biweekly/triweekly podcasts about either school news, interviewing new students/teachers, discussing school council-related events, talking to college counselors and older students, audiobooks (where we read accordingly to characters/narrator(s)), as well as weekly prompts. It is also a 'newspaper' as it offers more insight into SSF school life (also includes lots of writing).",
+    "platforms": [
+        {
+            "name": "Spotify",
+            "icon": "logos:spotify-icon",
+            "url": "https://open.spotify.com/show/7LV0UiUVlMFCY8ptjWF3PN?si=b14bf05e896b4a99"
+        },
+        {
+            "name": "Apple Music",
+            "icon": "logos:apple",
+            "url": "https://podcasts.apple.com/us/podcast/sedbergh-school-news-ssn/id6822300587"
+        }
+    ],
+    "contact": {
+        "emails": ["sallywu2020@outlook.com", "nkhoffmann@outlook.com"],
+        "showTeams": true
+    }
+}

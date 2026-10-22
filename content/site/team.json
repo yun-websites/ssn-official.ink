@@ -1,0 +1,64 @@
+{
+    "$comment": "社团成员名单。roles 里填角色，可用英文键见 app/i18n 语言文件 association.roles 部分（如 founder / leader / host / leadWriter / writer / producer / leadTranslator）。如需新角色，先在两个语言文件里加上翻译。",
+    "founders": [
+        {
+            "name": "Sally Wu",
+            "grade": "g10",
+            "roles": ["founder", "leader", "host", "leadWriter", "producer"],
+            "image": ""
+        },
+        {
+            "name": "Nina Karina Hoffmann",
+            "grade": "g10",
+            "roles": ["founder", "leader", "host", "writer", "producer"],
+            "image": ""
+        }
+    ],
+    "members": [
+        {
+            "name": "Bettie Wang",
+            "grade": "g10",
+            "roles": ["host", "leadTranslator"],
+            "image": ""
+        },
+        {
+            "name": "Andy Yang",
+            "grade": "g9",
+            "roles": ["writer"],
+            "image": ""
+        },
+        {
+            "name": "Minnie Chen",
+            "grade": "g9",
+            "roles": ["host"],
+            "image": ""
+        }
+    ],
+    "alumni": [
+        {
+            "name": "Sally Wu",
+            "period": "2026–current",
+            "roles": ["founder", "leader", "host", "leadWriter", "producer"]
+        },
+        {
+            "name": "Nina Karina Hoffmann",
+            "period": "2026–current",
+            "roles": ["founder", "leader", "host", "writer", "producer"]
+        },
+        {
+            "name": "Bettie Wang",
+            "period": "2026–current",
+            "roles": ["host", "leadTranslator"]
+        },
+        {
+            "name": "Andy Yang",
+            "period": "2026–current",
+            "roles": ["writer"]
+        },
+        {
+            "name": "Minnie Chen",
+            "period": "2026–current",
+            "roles": ["host"]
+        }
+    ]
+}

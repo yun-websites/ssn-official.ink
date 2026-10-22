@@ -1,0 +1,53 @@
+{
+    "$comment": "Interface text (in English). Just modify the text inside the quotation marks. Do not change the key names.",
+    "nav": {
+        "home": "Home",
+        "podcasts": "Podcasts",
+        "association": "SSN Association",
+        "contact": "Contact"
+    },
+    "home": {
+        "badge": "Official Newspaper / Podcast of Sedbergh School Fuzhou",
+        "heroTitle": "Sedbergh School News",
+        "heroDescription": "Sedbergh School News (or more commonly known as SSN) is the official newspaper/podcast of Sedbergh School Fuzhou. Founded in September 2026 by SSF G10 students Sally Wu and Nina Karina Hoffmann, it first started off as an extracurricular project but soon evolved into something much more.\n\nThis website provides biweekly/triweekly podcasts about either school news, interviewing new students/teachers, discussing school council-related events, talking to college counselors and older students, audiobooks (where we read accordingly to characters/narrator(s)), as well as weekly prompts. It is also a 'newspaper' as it offers more insight into SSF school life (also includes lots of writing).",
+        "aboutTitle": "About SSN",
+        "quotesTitle": "From the founders",
+        "listenTitle": "Listen to SSN",
+        "listenHint": "Our podcast is available on the platforms below."
+    },
+    "podcasts": {
+        "title": "Podcasts",
+        "latestLabel": "Latest Episode",
+        "listenOn": "Listen on {{platform}}",
+        "episodesLabel": "Episodes"
+    },
+    "association": {
+        "title": "SSN Association",
+        "foundersTitle": "Founders",
+        "membersTitle": "Members",
+        "alumniTitle": "Alumni",
+        "roles": {
+            "founder": "Founder",
+            "leader": "Current Leader",
+            "host": "Host",
+            "leadWriter": "Lead Writer",
+            "writer": "Writer",
+            "producer": "Producer",
+            "leadTranslator": "Lead Translator"
+        },
+        "grades": {
+            "g9": "G9",
+            "g10": "G10"
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "lead": "Got an idea for an episode?",
+        "emailLabel": "Email us at:",
+        "teamsLabel": "Microsoft Teams",
+        "teamsHint": "If you're an SSF high school student, teacher or manager, simply shoot us a message through Teams!"
+    },
+    "footer": {
+        "tagline": "Official Newspaper/Podcast of Sedbergh School Fuzhou"
+    }
+}

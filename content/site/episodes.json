@@ -1,0 +1,35 @@
+{
+    "$comment": "单集列表。往 latest 里填最新一集；episodes 里按时间倒序排列（最新的在最上面）。episode 数量不限，往下加即可。",
+    "latest": {
+        "number": 5,
+        "series": "Study Corner",
+        "date": "2026-12-01",
+        "title": "How to prepare for final exams",
+        "description": "In this episode we share our best revision tips and talk to older students about how they prepare for finals.",
+        "url": "https://open.spotify.com/show/7LV0UiUVlMFCY8ptjWF3PN?si=b14bf05e896b4a99",
+        "duration": "24 min",
+        "image": ""
+    },
+    "episodes": [
+        {
+            "number": 2,
+            "series": "Study Corner",
+            "date": "2026-11-15",
+            "title": "Time management for busy students",
+            "description": "Balancing homework, activities and rest — practical tips from SSN hosts.",
+            "url": "",
+            "duration": "18 min",
+            "image": ""
+        },
+        {
+            "number": 1,
+            "series": "Study Corner",
+            "date": "2026-11-01",
+            "title": "Welcome to SSN",
+            "description": "Our very first episode: who we are and what SSN is all about.",
+            "url": "",
+            "duration": "15 min",
+            "image": ""
+        }
+    ]
+}
