@@ -137,7 +137,7 @@
         @apply border-border outline-ring/50;
     }
     body {
-        @apply bg-background text-foreground;
+        @apply bg-background text-foreground overscroll-none;
     }
     button:not(:disabled),
     [role="button"]:not(:disabled) {
@@ -145,5 +145,12 @@
     }
     html {
         @apply font-serif;
+    }
+
+    img {
+        @apply pointer-events-none;
+    }
+    *:not(a, input, textarea, .selectable) {
+        @apply select-none;
     }
 }
