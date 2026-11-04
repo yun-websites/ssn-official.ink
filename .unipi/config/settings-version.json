@@ -1,0 +1,19 @@
+{
+  "migrated_version": "3.0.0",
+  "finalized": false,
+  "appliedAt": "2026-11-04T09:15:40.665Z",
+  "log": [
+    {
+      "action": "skipped:missing",
+      "from": "/Users/jimlin/Developer/Projects/Org3.SSN/ssn-official/.unipi/config/compactor.json"
+    },
+    {
+      "action": "skipped:missing",
+      "from": "/Users/jimlin/Developer/Projects/Org3.SSN/ssn-official/.unipi/fusion-preset.json"
+    },
+    {
+      "action": "skipped:missing",
+      "from": "/Users/jimlin/Developer/Projects/Org3.SSN/ssn-official/.unipi/config/background-tasks.json"
+    }
+  ]
+}
