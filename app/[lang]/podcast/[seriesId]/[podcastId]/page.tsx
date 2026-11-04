@@ -1,12 +1,26 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Headphones } from "lucide-react";
 import { getLocaleMetadata, getPodcastsMetadata, isLanguageCode, message, type LanguageCode } from "@/lib/metadata";
 
+type PodcastEpisodeParams = { lang: string; seriesId: string; podcastId: string };
+
+export async function generateMetadata({ params }: { params: Promise<PodcastEpisodeParams> }): Promise<Metadata> {
+    const { lang: rawLang, seriesId, podcastId } = await params;
+    if (!isLanguageCode(rawLang)) notFound();
+    const [messages, podcasts] = await Promise.all([getLocaleMetadata(rawLang), getPodcastsMetadata()]);
+    const series = podcasts.series.find((item) => item.id === seriesId);
+    const episode = series?.episodes.find((item) => item.id === podcastId);
+    if (!series || !episode) notFound();
+    const title = episode.title[rawLang];
+    return { title: title ? `${title} | ${series.title[rawLang]}` : message(messages, "podcasts.title") };
+}
+
 export default async function PodcastEpisodePage({
     params,
 }: {
-    params: Promise<{ lang: string; seriesId: string; podcastId: string }>;
+    params: Promise<PodcastEpisodeParams>;
 }) {
     const { lang: rawLang, seriesId, podcastId } = await params;
     if (!isLanguageCode(rawLang)) notFound();

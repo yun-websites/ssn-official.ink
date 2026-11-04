@@ -1,6 +1,14 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { getLocaleMetadata, getSiteMetadata, isLanguageCode, message, type LanguageCode } from "@/lib/metadata";
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+    const { lang: rawLang } = await params;
+    if (!isLanguageCode(rawLang)) notFound();
+    const messages = await getLocaleMetadata(rawLang);
+    return { title: message(messages, "contact.title") };
+}
 
 export default async function Contact({ params }: { params: Promise<{ lang: string }> }) {
     const { lang: rawLang } = await params;

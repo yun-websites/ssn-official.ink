@@ -1,9 +1,17 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { PlatformIcon } from "@/components/site/platform-icon";
 import { getLocaleMetadata, getQuotesMetadata, getSiteMetadata, isLanguageCode, message, type LanguageCode } from "@/lib/metadata";
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+    const { lang: rawLang } = await params;
+    if (!isLanguageCode(rawLang)) notFound();
+    const messages = await getLocaleMetadata(rawLang);
+    return { title: message(messages, "home.heroTitle") };
+}
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
     const { lang: rawLang } = await params;

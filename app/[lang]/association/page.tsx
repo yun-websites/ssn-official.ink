@@ -1,7 +1,15 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { Separator } from "@/components/ui/separator";
 import { getLocaleMetadata, getTeamMetadata, isLanguageCode, message, type LanguageCode, type PersonMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+    const { lang: rawLang } = await params;
+    if (!isLanguageCode(rawLang)) notFound();
+    const messages = await getLocaleMetadata(rawLang);
+    return { title: message(messages, "association.title") };
+}
 
 function sortedByName(people: PersonMetadata[]) {
     return [...people].sort((a, b) => a.name.localeCompare(b.name));
