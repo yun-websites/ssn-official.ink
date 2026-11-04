@@ -1,6 +1,7 @@
 import siteData from "@/content/site/site.json";
 import teamData from "@/content/site/team.json";
 import quotesData from "@/content/site/quotes.json";
+import podcastsData from "@/content/site/podcasts.json";
 
 export interface PlatformMetadata {
     name: string;
@@ -41,6 +42,30 @@ export interface QuotesMetadata {
     quotes: QuoteMetadata[];
 }
 
+export type LocalizedContent = Record<LanguageCode, string>;
+
+export interface PodcastEpisodeMetadata {
+    id: string;
+    title: LocalizedContent;
+    publishedAt?: string;
+    description?: LocalizedContent;
+    duration?: string;
+    image?: string;
+    url?: string;
+}
+
+export interface PodcastSeriesMetadata {
+    id: string;
+    title: LocalizedContent;
+    description: LocalizedContent;
+    image?: string;
+    episodes: PodcastEpisodeMetadata[];
+}
+
+export interface PodcastsMetadata {
+    series: PodcastSeriesMetadata[];
+}
+
 // Page code depends on these accessors, not the storage format or provider.
 export async function getSiteMetadata(): Promise<SiteMetadata> {
     return siteData;
@@ -52,6 +77,10 @@ export async function getTeamMetadata(): Promise<TeamMetadata> {
 
 export async function getQuotesMetadata(): Promise<QuotesMetadata> {
     return quotesData;
+}
+
+export async function getPodcastsMetadata(): Promise<PodcastsMetadata> {
+    return podcastsData;
 }
 
 export type LanguageCode = "zh-CN" | "en-GB";
@@ -73,13 +102,18 @@ export function isLanguageCode(value: string): value is LanguageCode {
 }
 
 export function message(messages: MessageTree, path: string): string {
-    const value = path.split(".").reduce<string | MessageTree | undefined>(
-        (current, key) => (typeof current === "object" && current ? current[key] : undefined),
-        messages,
-    );
+    const value = path
+        .split(".")
+        .reduce<string | MessageTree | undefined>(
+            (current, key) => (typeof current === "object" && current ? current[key] : undefined),
+            messages
+        );
     return typeof value === "string" ? value : path;
 }
 
 export function translate(messages: MessageTree, path: string, values: Record<string, string> = {}): string {
-    return Object.entries(values).reduce((result, [key, value]) => result.replaceAll(`{{${key}}}`, value), message(messages, path));
+    return Object.entries(values).reduce(
+        (result, [key, value]) => result.replaceAll(`{{${key}}}`, value),
+        message(messages, path)
+    );
 }

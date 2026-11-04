@@ -29,9 +29,14 @@
     },
     "podcasts": {
         "title": "Podcasts",
-        "latestLabel": "Latest Episode",
-        "listenOn": "Listen on {{platform}}",
-        "episodesLabel": "Episodes"
+        "overviewDescription": "Explore the podcast series produced by Sedbergh School News.",
+        "episodesLabel": "Episodes",
+        "emptyTitle": "No series published yet",
+        "emptyDescription": "Podcast series will appear here when they are published.",
+        "backToSeries": "All series",
+        "episodeCount": "{{count}} episodes",
+        "noEpisodes": "No episodes published yet.",
+        "listenEpisode": "Listen to episode"
     },
     "association": {
         "title": "SSN Association",

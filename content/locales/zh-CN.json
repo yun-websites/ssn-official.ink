@@ -29,9 +29,14 @@
     },
     "podcasts": {
         "title": "播客",
-        "latestLabel": "最新一集",
-        "listenOn": "在 {{platform}} 收听",
-        "episodesLabel": "往期节目"
+        "overviewDescription": "浏览赛德文新闻社制作的播客系列。",
+        "episodesLabel": "节目列表",
+        "emptyTitle": "暂未发布播客系列",
+        "emptyDescription": "播客系列发布后将在这里展示。",
+        "backToSeries": "全部系列",
+        "episodeCount": "{{count}} 期节目",
+        "noEpisodes": "暂未发布节目。",
+        "listenEpisode": "收听本期节目"
     },
     "association": {
         "title": "SSN 社团",

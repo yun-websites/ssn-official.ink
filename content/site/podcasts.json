@@ -1,0 +1,4 @@
+{
+    "$comment": "Podcast series and episode catalogue. Keep IDs URL-safe and stable; titles and descriptions are shared across languages until localized fields are needed.",
+    "series": []
+}
